@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Built-in_pipes": {
+    "change1": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/built-in-pipes",
+            "outputPath": "dist/change1",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -62,10 +62,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "Built-in_pipes:build:production"
+              "buildTarget": "change1:build:production"
             },
             "development": {
-              "buildTarget": "Built-in_pipes:build:development"
+              "buildTarget": "change1:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -73,7 +73,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "Built-in_pipes:build"
+            "buildTarget": "change1:build"
           }
         },
         "test": {
@@ -98,6 +98,6 @@
     }
   },
   "cli": {
-    "analytics": "4ad4b0b3-81e8-4d9b-a9db-3f5631f738dc"
+    "analytics": "851393a4-8956-4585-a61d-8cae41a5be45"
   }
 }

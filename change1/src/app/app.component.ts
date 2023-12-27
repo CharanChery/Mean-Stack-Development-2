@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 
@@ -9,8 +9,13 @@ import { RouterOutlet } from '@angular/router';
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
-export class AppComponent {
-  title = 'Built-in_pipes APP';
-  productCode='P001';
-  productName="Hike api";
+export class AppComponent implements OnInit {
+  courseName = "MSD";
+constructor() { }
+ngOnInit() {
+}
+changeName() {
+this.courseName = "CSE";
+}
+
 }
