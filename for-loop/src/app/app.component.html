@@ -1,0 +1,14 @@
+
+<table border="1">
+  <tr>
+    <td>name</td>
+    <td>rollnumber</td>
+    <td>mail id</td>
+  </tr>
+  <tr *ngFor="let i of details">
+      <td>{{i.name}}</td>
+      <td>{{i.rollnumber}}</td>
+      <td>{{i.email}}</td>
+  </tr>
+</table>
+<h1 *ngFor="let m of arr">{{m}}</h1>
